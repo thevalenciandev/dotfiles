@@ -1,0 +1,56 @@
+set folder = imaps://imap.gmail.com:993
+set imap_user = thevalenciandev@gmail.com
+set smtp_url = smtp://thevalenciandev@smtp.gmail.com:587
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set from = thevalenciandev@gmail.com
+
+set spoolfile = +INBOX
+set postponed = +[Gmail]/Drafts
+unset record # Gmail already automatically saves sent e-mail to +[Gmail]/Sent
+unset trash
+mailboxes =INBOX =[Gmail]/Drafts
+
+# Store message headers locally to speed things up.
+# If hcache is a folder, Mutt will create sub cache folders for each account which may speeds things up even more.
+set header_cache = ~/.cache/mutt
+
+set fast_reply = yes # do not ask recipient and subject confirmation upon email reply
+set include = yes # include original email in answer
+
+set editor = "vim +':set number'"
+
+# Sidebar
+set sidebar_visible = no
+
+# Index
+set sort = threads
+set sort_aux = reverse-last-date-received
+
+# Pager
+set pager_index_lines = 10 # Display the index above the pager view
+set pager_context = 3
+set pager_stop = yes # Stop at the end instead of displaying next mail
+set menu_scroll
+set tilde
+unset markers
+
+# Status Bar
+set status_chars = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Style
+#source /usr/share/doc/neomutt/samples/colors.linux
+source /usr/share/doc/neomutt/colorschemes/solarized-dark-256.neomuttrc
+
+# Bindings
+bind index g noop # avoid error message
+bind index gg first-entry
+bind index G last-entry
+bind index R group-reply
+
+bind pager g  noop
+bind pager gg top
+bind pager G bottom
+bind pager R group-reply
