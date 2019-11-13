@@ -14,7 +14,9 @@ mailboxes =INBOX =[Gmail]/Drafts
 
 # Store message headers locally to speed things up.
 # If hcache is a folder, Mutt will create sub cache folders for each account which may speeds things up even more.
-set header_cache = ~/.cache/mutt
+set header_cache = ~/.cache/mutt/headers
+set message_cachedir = ~/.cache/mutt/bodies
+set certificate_file = ~/.cache/mutt/certificates
 
 set fast_reply = yes # do not ask recipient and subject confirmation upon email reply
 set include = yes # include original email in answer
