@@ -138,6 +138,4 @@ ex ()
   fi
 }
 
-# Managing dotfiles
-# https://www.atlassian.com/git/tutorials/dotfiles
-alias dgit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+source ~/.config/aliasrc
