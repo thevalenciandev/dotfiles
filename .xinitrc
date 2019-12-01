@@ -65,6 +65,7 @@ get_session(){
 
 exec $(get_session)
 
-# -R restores the last colorscheme that was in use.
-# https://github.com/dylanaraps/pywal/wiki/Getting-Started
+# -R restores the last colorscheme that was in use by pywal
 wal -R
+# Restores current wallpaper (the one in ~/.fehbg)
+~/.fehbg &
