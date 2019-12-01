@@ -31,7 +31,7 @@ alert = 10.0
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
+format_mem = "{Mum}MB/{MTm}MB({Mup}%)"
 format_swap = "{SUp}%"
 
 [[block]]
