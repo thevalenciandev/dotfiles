@@ -1,5 +1,13 @@
-theme = "solarized-dark"
+theme = "gruvbox-dark"
 icons = "awesome"
+
+[[block]]
+block = "maildir"
+interval = 60
+inboxes = ["~/.local/share/mail/eboschferrando/INBOX", "~/.local/share/mail/eboschferrando/Bank", "~/.local/share/mail/eboschferrando/Geek", "~/.local/share/mail/eboschferrando/Shopping", "~/local/share/mail/eboschferrando/Bills"]
+threshold_warning = 1
+threshold_critical = 10
+display_type = "new"
 
 [[block]]
 block = "battery"
@@ -34,6 +42,12 @@ interval = 1
 block = "load"
 interval = 1
 format = "{1m}"
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{average}° avg"
 
 [[block]]
 block = "sound"

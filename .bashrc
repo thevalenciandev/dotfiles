@@ -139,3 +139,4 @@ ex ()
 }
 
 source ~/.config/aliasrc
+source ~/.config/wal/wal.config
