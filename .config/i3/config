@@ -14,6 +14,12 @@ gaps outer 15
 set $term --no-startup-id $TERMINAL
 set $mod Mod4
 
+# i3 AUTOSTART
+# Avoiding screen flickering
+exec --no-startup-id compton
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/yiker.png
+
 # #---Dropdown Windows---# #
 # General dropdown window traits. The order can matter.
 for_window [instance="dropdown_*"] floating enable
