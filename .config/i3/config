@@ -15,8 +15,8 @@ set $term --no-startup-id $TERMINAL
 set $mod Mod4
 
 # #--i3 AUTOSTART--# #
-# Touchpad natural scrolling
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Natural Scrolling Enabled" 1
+exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tappint Enabled" 1
 # Avoiding screen flickering
 exec --no-startup-id compton
 # Wallpaper
