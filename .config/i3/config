@@ -55,6 +55,7 @@ bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 2%- unmu
 bindsym XF86AudioMute 		exec --no-startup-id amixer -q set Master toggle
 
 # #---Letter Key Bindings---# #
+bindsym $mod+d			exec dmenu_run
 bindsym $mod+q			kill
 bindsym $mod+Shift+q		exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
