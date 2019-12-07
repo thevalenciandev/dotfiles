@@ -50,8 +50,8 @@ bindsym $mod+Shift+Escape 	exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $FILE
 
 # Volume keys
-bindsym XF86AudioRaiseVolume 	exec --no-startup-id amixer -q set Master 2%+
-bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 2%-
+bindsym XF86AudioRaiseVolume 	exec --no-startup-id amixer -q set Master 2%+ unmute
+bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 2%- unmute
 bindsym XF86AudioMute 		exec --no-startup-id amixer -q set Master toggle
 
 # #---Letter Key Bindings---# #
@@ -128,7 +128,7 @@ bindsym $mod+slash		split vertical ;; exec $term
 bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 
-set $ws1 "1"
+set $ws1 "1:  "
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
