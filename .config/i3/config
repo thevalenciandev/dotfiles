@@ -23,7 +23,7 @@ exec --no-startup-id compton
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/yiker.png
 
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 12
+    font pango:DejaVu Sans Mono, FontAwesome 11
     position top
     status_command /usr/bin/i3status-rs ~/.config/i3/status.toml
     colors {
@@ -46,9 +46,6 @@ bindsym $mod+space		focus mode_toggle
 bindsym $mod+Escape		workspace prev
 bindsym $mod+Shift+Escape 	exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 
-#STOP/HIDE EVERYTHING:
-bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $FILE
-
 # Volume keys
 bindsym XF86AudioRaiseVolume 	exec --no-startup-id amixer -q set Master 2%+ unmute
 bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 2%- unmute
@@ -61,7 +58,6 @@ bindsym XF86MonBrightnessUp	exec --no-startup-id light -A 15
 # #---Letter Key Bindings---# #
 bindsym $mod+d			exec dmenu_run
 bindsym $mod+q			kill
-bindsym $mod+Shift+q		exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 bindsym $mod+t			split toggle
 bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15
@@ -134,7 +130,7 @@ bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 
 set $ws1 "1:  "
-set $ws2 "2"
+set $ws2 "2:  "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
