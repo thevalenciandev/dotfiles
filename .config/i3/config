@@ -57,6 +57,7 @@ bindsym XF86MonBrightnessUp	exec --no-startup-id light -A 15
 
 # #---Letter Key Bindings---# #
 bindsym $mod+d			exec dmenu_run
+bindsym $mod+m			exec $term -e neomutt
 bindsym $mod+q			kill
 
 bindsym $mod+t			split toggle
@@ -131,7 +132,7 @@ bindsym $mod+backslash		workspace back_and_forth
 
 set $ws1 "1:  "
 set $ws2 "2:  "
-set $ws3 "3"
+set $ws3 "3:  "
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
