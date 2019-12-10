@@ -46,6 +46,12 @@ bindsym $mod+space		focus mode_toggle
 bindsym $mod+Escape		workspace prev
 bindsym $mod+Shift+Escape 	exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 
+# Music control keys
+bindsym XF86AudioNext		exec mpc next
+bindsym XF86AudioPlay		exec mpc toggle
+bindsym XF86AudioPrev		exec mpc prev
+bindsym XF86AudioStop		exec mcp stop
+
 # Volume keys
 bindsym XF86AudioRaiseVolume 	exec --no-startup-id amixer -q set Master 2%+ unmute
 bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 2%- unmute
@@ -138,8 +144,8 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws9 "9:  "
+set $ws10 "10:  "
 
 # switch to workspace
 bindsym $mod+1		workspace $ws1
