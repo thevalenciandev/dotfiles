@@ -2,6 +2,10 @@ theme = "gruvbox-dark"
 icons = "awesome"
 
 [[block]]
+block = "focused_window"
+max_width = 21
+
+[[block]]
 block = "music"
 
 [[block]]
@@ -35,7 +39,7 @@ alert = 10.0
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mum}MB"
+format_mem = "{Mum} MB"
 
 [[block]]
 block = "cpu"
@@ -50,7 +54,7 @@ format = "{1m}"
 block = "temperature"
 collapsed = false
 interval = 10
-format = "{average}° avg"
+format = "{average}°"
 
 [[block]]
 block = "sound"

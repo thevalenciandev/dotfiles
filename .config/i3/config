@@ -26,7 +26,7 @@ exec_always --no-startup-id feh --bg-fill $HOME/Pictures/Autumn.jpg
 exec --no-startup-id mpDris2
 
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 11
+    font pango:DejaVu Sans Mono, FontAwesome 10
     position top
     status_command /usr/bin/i3status-rs ~/.config/i3/status.toml
     colors {
