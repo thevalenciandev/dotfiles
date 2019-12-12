@@ -15,12 +15,15 @@ set $term --no-startup-id $TERMINAL
 set $mod Mod4
 
 # #--i3 AUTOSTART--# #
+# Enable Touchpad natural scrolling and tapping
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Natural Scrolling Enabled" 1
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled" 1
 # Avoiding screen flickering
 exec --no-startup-id compton
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/yiker.png
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/Autumn.jpg
+# Display track on i3status-rs bar
+exec --no-startup-id mpDris2
 
 bar {
     font pango:DejaVu Sans Mono, FontAwesome 11
