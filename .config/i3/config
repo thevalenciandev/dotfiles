@@ -68,6 +68,7 @@ bindsym XF86MonBrightnessUp	exec --no-startup-id light -A 15
 bindsym $mod+d			exec dmenu_run
 bindsym $mod+m			exec $term -e neomutt
 bindsym $mod+q			kill
+bindsym $mod+x			exec --no-startup-id mpc pause; exec --no-startup-id i3lock -e -f -i ~/Pictures/yiker.png
 
 bindsym $mod+t			split toggle
 bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15
