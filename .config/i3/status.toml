@@ -9,6 +9,9 @@ max_width = 21
 block = "music"
 
 [[block]]
+block = "sound"
+
+[[block]]
 block = "bluetooth"
 mac = "08:DF:1F:C5:32:A2"
 
@@ -20,11 +23,6 @@ signal_strength = true
 speed_up = false
 speed_down = false
 interval = 5
-
-[[block]]
-block = "battery"
-interval = 30
-format = "{percentage}% {time}"
 
 [[block]]
 block = "pacman"
@@ -61,10 +59,12 @@ interval = 10
 format = "{average}°"
 
 [[block]]
-block = "sound"
+block = "backlight"
 
 [[block]]
-block = "backlight"
+block = "battery"
+interval = 30
+format = "{percentage}% {time}"
 
 [[block]]
 block = "time"
