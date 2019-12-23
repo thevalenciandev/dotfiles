@@ -20,9 +20,9 @@ set $mod Mod4
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Natural Scrolling Enabled" 1
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled" 1
 # Avoiding screen flickering
-exec --no-startup-id compton
+exec --no-startup-id picom
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/Autumn.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/fox.jpg
 # Display track on i3status-rs bar
 exec --no-startup-id mpDris2
 
