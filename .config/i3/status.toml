@@ -9,6 +9,10 @@ max_width = 21
 block = "music"
 
 [[block]]
+block = "bluetooth"
+mac = "08:DF:1F:C5:32:A2"
+
+[[block]]
 block = "net"
 device = "wlp1s0"
 ssid = true
