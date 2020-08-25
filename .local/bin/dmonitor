@@ -1,0 +1,17 @@
+#!/bin/sh
+# Toggle on/off extra monitor
+
+# TODO: fetch these dynamically using "xrander -q"
+main="eDP"
+extra="HDMI-A-0"
+
+extramonitor() {
+  case "$1" in
+      "disconnect") xrandr --output "$extra" --off --output "$main" --auto ;;
+      "connect") xrandr --output "$extra" --auto --output "$main" --off ;;
+      *) notify-send "Multi Monitor" "Unknown Operation" ;;
+  esac
+}
+
+selection=$(printf "disconnect\nconnect" | dmenu -i -p "Monitor Configuration")
+extramonitor "$selection"

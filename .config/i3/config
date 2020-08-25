@@ -23,7 +23,7 @@ exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled"
 exec --no-startup-id picom
 # Wallpaper
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/pink-saturn.png
-# Display track on i3status-rs bar
+# Display track on bar
 exec --no-startup-id mpDris2
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -62,7 +62,6 @@ bindsym XF86AudioStop		exec mcp stop
 bindsym XF86AudioRaiseVolume 	exec --no-startup-id amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume 	exec --no-startup-id amixer -q set Master 5%- unmute
 bindsym XF86AudioMute 		exec --no-startup-id amixer -q set Master toggle
-
 # Brightness (requirement: sudo usermod -a -G video <login>)
 bindsym XF86MonBrightnessDown	exec --no-startup-id light -U 15
 bindsym XF86MonBrightnessUp	exec --no-startup-id light -A 15
@@ -181,6 +180,7 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 # #---Function Buttons---# #
 bindsym $mod+F2		restart
+bindsym $mod+F3		exec dmonitor
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		focus left
