@@ -51,8 +51,10 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+;font-0 = fixed:pixelsize=10;1
+font-0 = JetBrainsMonoMedium:pixelsize=9
+;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-1 = FontAwesome:pixelsize=11;1 
 ; More info on https://github.com/stark/siji
 font-2 = siji:pixelsize=10;1
 
@@ -286,10 +288,10 @@ type = internal/pulseaudio
 sink = alsa_output.pci-0000_03_00.6.analog-stereo
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted =  muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
