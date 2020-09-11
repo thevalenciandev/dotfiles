@@ -20,6 +20,8 @@ exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled"
 exec --no-startup-id picom
 # Wallpaper
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/pink-saturn.png
+# Start mpd daemon
+exec --no-startup-id mopidy
 # Display track on bar
 exec --no-startup-id mpDris2
 # polybar
