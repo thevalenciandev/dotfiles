@@ -3,9 +3,6 @@
 
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
-#
-# export FILE="ranger"
-# export TERMINAL="st"
 
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
@@ -15,7 +12,7 @@ set $term --no-startup-id $TERMINAL
 set $browser --no-startup-id $BROWSER
 set $mod Mod4
 
-# #--i3 AUTOSTART--# #
+# AUTOSTART #
 # Enable Touchpad natural scrolling and tapping
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Natural Scrolling Enabled" 1
 exec xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled" 1
@@ -27,6 +24,7 @@ exec_always --no-startup-id feh --bg-fill $HOME/Pictures/pink-saturn.png
 exec --no-startup-id mpDris2
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # i3 status bar
 #bar {
 #    font pango:DejaVu Sans Mono, FontAwesome 10
