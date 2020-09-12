@@ -9,7 +9,7 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-DEFAULT_SESSION=startkde
+DEFAULT_SESSION=bspwm-session
 
 # merge in defaults and keymaps
 
@@ -63,9 +63,7 @@ get_session(){
     echo "dbus-launch ${dbus_args[*]}"
 }
 
-exec $(get_session)
+# Make sure this is before the 'exec' command or it won't be sourced.
+[ -f ~/.xprofile ] && . ~/.xprofile
 
-# -R restores the last colorscheme that was in use by pywal
-wal -R
-# Restores current wallpaper (the one in ~/.fehbg)
-~/.fehbg &
+exec $(get_session)

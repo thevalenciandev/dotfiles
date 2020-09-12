@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Enable Touchpad natural scrolling and tapping
+xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "MSFT0001:00 044E:120A Touchpad" "libinput Tapping Enabled" 1

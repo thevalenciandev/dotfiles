@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# An xprofile file, ~/.xprofile and /etc/xprofile, allows you to execute commands
+# at the beginning of the X user session - before the window manager is started.
+# (ie. this file runs when a DM logs you into a graphical session.)
+
+touchpad-on &		# Natural scrolling and click on tap
+wal -R			# -R restores the last colorscheme that was in use by pywal
+~/.fehbg &		# Restores current wallpaper (the one in ~/.fehbg)
+picom -b &		# Compositor
+mpDris2 &		# Tracks displayed on bar
+~/.config/polybar/launch.sh &

@@ -27,8 +27,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/bar1]
-;monitor = ${env:MONITOR:HDMI-1}
+[bar/bar]
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -51,15 +50,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-;font-0 = fixed:pixelsize=10;1
 font-0 = JetBrainsMonoMedium:pixelsize=9
-;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-1 = FontAwesome:pixelsize=11;1 
 ; More info on https://github.com/stark/siji
 font-2 = siji:pixelsize=10;1
 
-; bspwm removed from modules-left below
-modules-left = i3
+modules-left = i3 bspwm 
 modules-center = mpd
 ; eth and alsa removed from modules-right below. xbacklight replaced by the acpi counterpart
 modules-right = filesystem backlight-acpi pulseaudio xkeyboard memory cpu wlan battery temperature date powermenu
