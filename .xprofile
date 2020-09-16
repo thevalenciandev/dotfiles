@@ -6,7 +6,7 @@
 
 touchpad-on &		# Natural scrolling and click on tap
 wal -R			# -R restores the last colorscheme that was in use by pywal
-~/.fehbg &		# Restores current wallpaper (the one in ~/.fehbg)
+setbg &			# Restores current wallpaper
 picom -b &		# Compositor
 mpDris2 &		# Tracks displayed on bar
 ~/.config/polybar/launch.sh &

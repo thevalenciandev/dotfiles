@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Restores current wallpaper (the one in ~/.fehbg)
+~/.fehbg
