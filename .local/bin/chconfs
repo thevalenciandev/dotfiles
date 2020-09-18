@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Helper script to offer a means of quickly editing on vim the most commonly touched configuration files
+
+c="$HOME/.config"
+i3=$c/"i3/config"
+bspwm=$c/bspwm/bspwmrc
+sxhkd=$c/sxhkd/sxhkdrc
+
+# Show options via dmenu
+c=$(printf "$i3\\n$bspwm\\n$sxhkd" | dmenu -i -p "Change config:")
+$TERMINAL -e vim $c
