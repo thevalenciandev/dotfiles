@@ -11,13 +11,13 @@
 super + Return
 	$TERMINAL
 super + d
-	dmenu_run
+	rofi -show run -theme darker-than-black_v3
 super + r
 	$TERMINAL -e $FILE
 super + e
 	$TERMINAL -e neomutt
 super + m
-	$TERMINAL -e ncmpcpp
+	startmusicd; $TERMINAL -e ncmpcpp
 super + n
 	$TERMINAL -e newsboat
 super + c
@@ -47,7 +47,7 @@ super + shift + BackSpace
 super + shift + Escape
 	prompt 'Leave Xorg?' 'killall Xorg'
 super + x
-	ifinstalled slock && ( slock & xset dpms force off ; mpc pause ; pauseallmpv )
+	mpc pause ; i3lock -e -f -i ~/Pictures/yiker.png 
 XF86Launch1
 	xset dpms force off
 XF86TouchpadToggle

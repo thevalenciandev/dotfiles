@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Kill it if already there
+killall mopidy
+
+# Launch it again
+mopidy &
