@@ -1,5 +1,6 @@
 # Managing dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias dgit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-alias p='sudo pacman'
 alias kernels='mhwd-kernel -li'
+alias p='sudo pacman'
+alias v='nvim'

@@ -4,12 +4,14 @@
 
 rt="$HOME/.config"
 
-i3=i3/config
 bspwm=bspwm/bspwmrc
+i3=i3/config
 sxhkd=sxhkd/sxhkdrc
+picom=picom/picom.conf
+nvim=nvim/init.vim
 
 # Show options via dmenu
-c=$(printf "$i3\\n$bspwm\\n$sxhkd" | dmenu -i -p "Change config:")
+c=$(printf "$i3\\n$bspwm\\n$sxhkd\\n$picom\\n$nvim" | dmenu -i -p "Change config:")
 
 # If one is selected, open it in editor
 [ ! -z $c ] && $TERMINAL -e $EDITOR "$rt/$c"
