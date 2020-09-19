@@ -9,4 +9,5 @@ wal -R			# -R restores the last colorscheme that was in use by pywal
 setbg &			# Restores current wallpaper
 picom -b &		# Compositor
 mpDris2 &		# Tracks displayed on bar
+dunst &			# Notification daemon
 ~/.config/polybar/launch.sh &
