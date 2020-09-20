@@ -57,8 +57,8 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3 bspwm 
 modules-center = mpd
-; eth and alsa removed from modules-right below. xbacklight replaced by the acpi counterpart
-modules-right = filesystem backlight-acpi pulseaudio xkeyboard memory cpu wlan battery temperature date powermenu
+; eth xkeyboard and alsa removed from modules-right below. xbacklight replaced by the acpi counterpart
+modules-right = filesystem backlight-acpi pulseaudio memory cpu wlan btoothctl battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -187,7 +187,7 @@ type = internal/xbacklight
 card = amdgpu_bl0
 
 format = <label> <bar>
-label = BL
+label = 
 
 bar-width = 10
 bar-indicator = |
@@ -259,6 +259,12 @@ format-disconnected =
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/btoothctl]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/btoothdisplay
+tail = true
+click-left = $HOME/.local/bin/btooth-toggle &
 
 [module/date]
 type = internal/date
@@ -416,10 +422,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = reboot
 
 menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
