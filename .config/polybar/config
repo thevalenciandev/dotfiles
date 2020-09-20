@@ -58,7 +58,7 @@ font-2 = siji:pixelsize=10;1
 modules-left = i3 bspwm 
 modules-center = mpd
 ; eth xkeyboard and alsa removed from modules-right below. xbacklight replaced by the acpi counterpart
-modules-right = filesystem backlight-acpi pulseaudio memory cpu wlan btoothctl battery temperature date powermenu
+modules-right = filesystem updates-pacman-aur backlight-acpi pulseaudio memory cpu wlan btoothctl battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -107,6 +107,11 @@ mount-0 = /
 label-mounted = %{F#fff}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/updates-pacman-aur]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/updates-pacman-aur.sh
+interval = 600
 
 [module/bspwm]
 type = internal/bspwm
