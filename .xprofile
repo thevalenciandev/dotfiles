@@ -10,4 +10,5 @@ setbg &			# Restores current wallpaper
 picom -b &		# Compositor
 mpDris2 &		# Tracks displayed on bar
 dunst &			# Notification daemon
+xset -b			# Disable annoying beep
 ~/.config/polybar/launch.sh &
