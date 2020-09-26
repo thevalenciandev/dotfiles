@@ -1,6 +1,6 @@
 # Managing dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias dgit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-alias kernels='mhwd-kernel -li'
 alias p='sudo pacman'
 alias v='nvim'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
