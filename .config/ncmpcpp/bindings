@@ -14,6 +14,10 @@ def_key "n"
     next_found_item
 def_key "N"
     previous_found_item
+def_key "G"
+  move_end
+def_key "g"
+  move_home
 
 def_key "."
     show_lyrics
