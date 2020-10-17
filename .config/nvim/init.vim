@@ -18,3 +18,4 @@ set wildmenu
 " Color-scheme
 colorscheme codedark
 let g:airline_theme = 'codedark'
+set cursorline " Highlight current line
