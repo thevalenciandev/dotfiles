@@ -16,8 +16,9 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$XDG_DATA_HOME/zsh/history"
 
 # Default programs
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/brave
 export EDITOR=/usr/bin/nvim
 export FILE=/usr/bin/ranger
 export TERMINAL=/usr/bin/kitty
 
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
