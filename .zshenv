@@ -12,6 +12,7 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export LESSHISTFILE="-"
 export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch/notmuchrc"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
+export SPACEVIMDIR="$XDG_CONFIG_HOME/SpaceVim" # Sadly you cannot move ~/.SpaceVim
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$XDG_DATA_HOME/zsh/history"
 
