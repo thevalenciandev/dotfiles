@@ -5,9 +5,9 @@
 # (ie. this file runs when a DM logs you into a graphical session.)
 
 touchpad-on &		# Natural scrolling and click on tap
-setbg &			# Restores current wallpaper
-picom -b &		# Compositor
-mpDris2 &		# Tracks displayed on bar
-dunst &			# Notification daemon
-xset -b			# Disable annoying beep
-~/.config/polybar/launch.sh &
+setbg &			    # Restores current wallpaper
+picom -b &		  # Compositor
+mpDris2 &		    # Tracks displayed on bar
+dunst &			    # Notification daemon
+xset -b			    # Disable annoying beep
+startbar
