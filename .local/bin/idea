@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wmname compiz  # Workaround when using windows managers that are not recognised by the JDK
+idea-ce &
