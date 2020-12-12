@@ -123,5 +123,6 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# Load syntax highlighting feature. Should be last
+# Load plugins. Should be last
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null 
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh >/dev/null 
