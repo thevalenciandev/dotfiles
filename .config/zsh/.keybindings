@@ -1,0 +1,5 @@
+# Search thru history
+bindkey "^R" history-incremental-pattern-search-backward
+
+# Ctrl+Space for autocompletion on autosuggest plugin
+zle -N autosuggest-accept && bindkey "^ " autosuggest-accept 

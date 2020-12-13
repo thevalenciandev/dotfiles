@@ -1,9 +1,8 @@
-source ~/.config/aliasrc
-#source ~/.config/wal/wal.config
+source $XDG_CONFIG_HOME/aliasrc
+source $XDG_CONFIG_HOME/zsh/.keybindings
+#source $XDG_CONFIG_HOME/wal/wal.config
 
-###########
-# Vi mode #
-###########
+# Vi mode
 bindkey -v
 export KEYTIMEOUT=1
 
@@ -32,4 +31,5 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 eval "$(starship init zsh)"
 # Load plugins. Should be last
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null 
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh >/dev/null
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh >/dev/null
+#source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh >/dev/null
