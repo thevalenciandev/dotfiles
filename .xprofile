@@ -6,7 +6,7 @@
 
 touchpad-on &		# Natural scrolling and click on tap
 setbg &			    # Restores current wallpaper
-picom --experimental-backends & # Compositor
+picom -b --experimental-backends & # Compositor
 mpDris2 &		    # Tracks displayed on bar
 dunst &			    # Notification daemon
 xset -b			    # Disable annoying beep
