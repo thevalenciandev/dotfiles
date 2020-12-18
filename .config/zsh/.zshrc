@@ -2,6 +2,11 @@ source $XDG_CONFIG_HOME/aliasrc
 source $XDG_CONFIG_HOME/zsh/.keybindings
 #source $XDG_CONFIG_HOME/wal/wal.config
 
+# History in cache directory
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.cache/zsh/histfile
+
 # Vi mode
 bindkey -v
 export KEYTIMEOUT=1
