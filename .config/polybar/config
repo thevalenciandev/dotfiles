@@ -254,20 +254,20 @@ type = internal/xbacklight
 
 card = amdgpu_bl0
 
-format = <label> <bar>
-label = 
+format = <label>
+label =  %percentage%%
 
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-; some rendering issue with 
-bar-fill = - 
-bar-fill-font = 2
-bar-fill-foreground = #fff
-bar-empty = -
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+; bar-width = 10
+; bar-indicator = |
+; bar-indicator-foreground = #fff
+; bar-indicator-font = 2
+; ; some rendering issue with 
+; bar-fill = - 
+; bar-fill-font = 2
+; bar-fill-foreground = #fff
+; bar-empty = -
+; bar-empty-font = 2
+; bar-empty-foreground = ${colors.foreground-alt}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -359,7 +359,7 @@ type = internal/pulseaudio
 ; If not, uses default sink
 sink = alsa_output.pci-0000_03_00.6.analog-stereo
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
